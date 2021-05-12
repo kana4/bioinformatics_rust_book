@@ -1,0 +1,6 @@
+[book]
+authors = ["otsukaresamaja"]
+language = "en"
+multilingual = false
+src = "src"
+title = "rust_bioinformatics_book"
