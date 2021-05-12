@@ -1,6 +1,6 @@
 # Summary
 
-- [Introduction](./1_Introduction.md)
-- [Getting Started](./2_Getting_Started.md)
-- [Hello World](./3_Hello_World.md)
-- [Hello Bio World](./4_Hello_Bio_World.md)
+- [A Book of Bioinformatics in Rust](./A_Book_Of_Bioinformatics_In_Rust.md)
+- [Blast Off!](./Blast_Off.md)
+- [Camping](./Camping.md)
+- [Camping In Bio](./Camping_In_Bio.md)
