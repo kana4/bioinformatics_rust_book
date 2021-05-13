@@ -1,0 +1,3 @@
+# Zany Bioinformatics References
+
+There are a few other bioinformatics references available, but of course this is the best one. The ones that I'm aware of are listed below. Generally, I've found the most useful information simply by googling and looking through forums such as Biostars and Seqanswers, but of course YMMV greatly there. The great thing is with Rust you can do anything a computer can do; there's no cap!
