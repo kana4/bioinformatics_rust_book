@@ -1,3 +1,0 @@
-# An Introduction
-
-Hello user! You've found a book of bioinformatics in Rust. If you're a total beginner to anything bioinformatics, Rust, or programming, then this is the book for you. I'm not a total expert myself, and as I'm writing to you the fields of bioinformatics and computer science continue to expand. This book is meant to be a beginner's guide and p0kedex, rather than a complete, grandmaster's p0kedex. I hope that this book captures your interest and gets you as excited as I am about bioinformatics!

@@ -17,11 +17,12 @@ print(thing)
 And comparatively in Rust:
 ```
 fn main(){
-    let thing=b"Hello World!".to_string()
-    Println!("{}", thing);
+    let thing="Hello World!".to_string();
+    println!("{:?}", thing);
 }
 ```
+[playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a4a47924ba912573476de3d42841c2b9)
 
 We also have to change directory to the home folder and type `cargo build bioinfo`, in addition to also running the program with `./target/debug/bioinfo`. What does all of this mean? Don't worry, we'll break it down in the next section.
 
-Why is it so much longer in Rust? In low-level languages, it was (and sort of still is) actually quite a feat to get to the first step where the computer says those two words back to you. I'm not sure, but this may have played a role in the choice of words.
+Why is it so much longer in Rust? Well there are a few things here that we're doing.

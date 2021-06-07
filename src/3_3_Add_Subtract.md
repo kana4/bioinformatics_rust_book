@@ -1,13 +1,13 @@
 # Add and Subtract
 
-There's an incredible number of data structures and types in Rust, with each one having specific trade offs. Don't worry about it yet, we'll get our bearings and stick to Vec<u8> for now.
-
-
-
 ```
 fn main(){
-    
+    let x = 1;
+    let y = 2;
+    let z = x + y;
+    println!("{}", z);
 }
-
-
 ```
+
+[playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a31f2eadc4a15117a95e13fb5b271fc3)
+
