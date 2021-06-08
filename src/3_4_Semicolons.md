@@ -6,6 +6,6 @@ Really if you can't do it in a high-level language, it's because someone in a lo
 You'll also hear about these languages being really fast and super efficient. In essence, almost all computing relies on these languages.
 <!-- 
 <a href="./7_List_Of_Bioinformatics_Tools.md" target="_blank">List of Bioinformatics Tools</a> -->
-
+We also have to change directory to the home folder and type `cargo build bioinfo`, in addition to also running the program with `./target/debug/bioinfo`. What does all of this mean? Don't worry, we'll break it down in the next section.
 ## Note 2
 There's an incredible number of data structures and types in Rust, with each one having specific trade offs. Don't worry about it and just stick to Vec<u8> for now. We can build on the shoulders of giants with the core and standard library.

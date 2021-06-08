@@ -1,4 +1,10 @@
 # Setup
+
+![Introduction Rust Playground](./img/intro_playground.gif)
+
+Side Note: my terminal is one of the options in Mac, if you want to customize yours go here!
+
+
 Hello world! Well, not quite yet, we need to install prerequisites (but it's not that hard, we promise!). Throughout the book, we'll also give shortcuts and tools that *really* help speed things up.
 
 There are a few things on our *TODO* list and we refer you to the original sources as these will give you better instructions than we can:
