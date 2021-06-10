@@ -16,5 +16,5 @@ fn main(){
 ```
 
 ![hsa nasa](./img/hsa_nasa.jpg)
-*Electron density projection of human serum albumin protein. Even complicated biological things are made of smaller, simpler things!* 
+*Electron density projection of human serum albumin protein taken by NASA. Even complicated biological things are made of smaller, simpler things!* 
 
