@@ -28,7 +28,7 @@ Why is it so much longer in Rust? With great power comes having to be specific! 
 
 We're building a binary, which is why we have the main function, `fn main(){}`. 
 
-Inside the main function, we create a variable `thing` that stores `"Hello World!"` just like in the other languages. Unlike the other languages though, we have to actually state that the `"Hello World!"` is a [string](https://en.wikipedia.org/wiki/String_(computer_science))! 
+Inside the main function, we create a variable `thing` that stores `"Hello World!"` just like in the other languages. Unlike the other languages though, we have to actually state that the `"Hello World!"` is a [string](https://en.wikipedia.org/wiki/String_(computer_science)) or a (not necessarily English) word.
 
 The final part of our code prints what we want. We put the `thing` variable into a function to print what's in the variable, where the first input to `println!`, `"{}"` is just our variable, and the second input is the actual variable to be printed. As an example, we could print:
 
