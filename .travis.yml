@@ -22,9 +22,9 @@ deploy:
   edge: true
   cleanup: false
   github-token: $GITHUB_TOKEN
-  local-dir: book
+  local-dir: bioinformatics_rust_book/book
   keep-history: false
   on:
-    branch: gh-pages
+    branch: main
   target_branch: gh-pages
 
