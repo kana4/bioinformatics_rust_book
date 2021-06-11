@@ -14,7 +14,7 @@ before_script:
   - cargo install-update -a
 
 script:
-  - mdbook build bioinformatics_rust_book && mdbook test bioinformatics_rust_book
+  - mdbook build && mdbook test 
   
 deploy:
   provider: pages
