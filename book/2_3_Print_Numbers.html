@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Blast Off! - rust_bioinformatics_book</title>
+        <title>Print Numbers - Bioinformatics in Rust</title>
         
         
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="An_Introduction.html"><strong aria-hidden="true">1.</strong> An Introduction</a></li><li class="chapter-item expanded "><a href="Blast_Off.html" class="active"><strong aria-hidden="true">2.</strong> Blast Off!</a></li><li class="chapter-item expanded "><a href="Camping.html"><strong aria-hidden="true">3.</strong> Camping</a></li><li class="chapter-item expanded "><a href="Camping_In_Bio.html"><strong aria-hidden="true">4.</strong> Camping, Biology!</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1_0_An_Introduction.html"><strong aria-hidden="true">1.</strong> An Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="1_1_Definitions_and_Background.html"><strong aria-hidden="true">1.1.</strong> Definitions and Background</a></li><li class="chapter-item expanded "><a href="1_2_Binary_vs_Library.html"><strong aria-hidden="true">1.2.</strong> Binary vs Library</a></li></ol></li><li class="chapter-item expanded "><a href="2_0_Ready_Go.html"><strong aria-hidden="true">2.</strong> Ready Go</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="2_1_Add_Subtract_Multiply_Divide.html"><strong aria-hidden="true">2.1.</strong> Add, Subtract, Multiply, Divide</a></li><li class="chapter-item expanded "><a href="Semicolons.html"><strong aria-hidden="true">2.2.</strong> Semicolons</a></li><li class="chapter-item expanded "><a href="2_3_Print_Numbers.html" class="active"><strong aria-hidden="true">2.3.</strong> Print Numbers</a></li><li class="chapter-item expanded "><a href="2_4_Comparing_Printing_Strings.html"><strong aria-hidden="true">2.4.</strong> Comparing Printing Strings</a></li><li class="chapter-item expanded "><a href="2_5_Level_Cleared.html"><strong aria-hidden="true">2.5.</strong> Level Cleared!</a></li></ol></li><li class="chapter-item expanded "><a href="3_0_Vectors.html"><strong aria-hidden="true">3.</strong> Vectors</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="3_1_Print_Vectors.html"><strong aria-hidden="true">3.1.</strong> Print Vectors</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -127,7 +127,7 @@
                         
                     </div>
 
-                    <h1 class="menu-title">rust_bioinformatics_book</h1>
+                    <h1 class="menu-title">Bioinformatics in Rust</h1>
 
                     <div class="right-buttons">
                         
@@ -163,22 +163,36 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p>Hello world! Well not quite yet; we need to learn a little bit about how things work in the computer world so we can talk to the computer from our human world and <em>vice versa</em>. In the process, we'll set up everything to give the computer instructions and write programs. Throughout the book, we'll also give shortcuts and tools that <em>really</em> help speed things up.</p>
-<p><em>For the tl;dr skip to the TODO list</em></p>
-<p>There are a few things on our <strong>TODO</strong> list:</p>
+                        <h1 id="print-numbers"><a class="header" href="#print-numbers">Print Numbers</a></h1>
+<p>Let's print something!</p>
+<pre><code>fn main(){
+    println!(&quot;42&quot;)
+}
+</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=85ae37adbe96892255eab588c99912fe">playground</a></p>
+<p>Well that was pretty easy, we didn't even need the semicolon because we end the main function after printing. Now instead of printing directly, let's try printing something in a variable.</p>
+<pre><code>fn main(){
+    // Make a variable x that holds 1
+    let x = 1;
+
+    println!(&quot;{}&quot;, x)
+
+}
+</code></pre>
+<p>Now that we have a variable, <code>println!</code> takes two parts, the first is formatting the print, while the second part is the variable to print. the quotes surround everything that will be printed, in our case, <code>{}</code> which is always the input variable. So we have stated to print only the variable.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="An_Introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="Semicolons.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="Camping.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="2_4_Comparing_Printing_Strings.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -190,13 +204,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="An_Introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="Semicolons.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="Camping.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="2_4_Comparing_Printing_Strings.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
