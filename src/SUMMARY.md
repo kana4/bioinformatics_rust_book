@@ -11,3 +11,4 @@
     - [Level Cleared!](./2_5_Level_Cleared.md)
 - [Vectors](./3_0_Vectors.md)
     - [Print Vectors](./3_1_Print_Vectors.md)
+    - [Dot Notation](./3_2_Dot_Notation.md)
