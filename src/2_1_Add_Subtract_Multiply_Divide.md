@@ -1,5 +1,7 @@
 # Add, Subtract, Multiply, Divide
 
+Let's try some arithmetic next:
+
 ```
 fn main(){
     // Make a variable a that holds 1

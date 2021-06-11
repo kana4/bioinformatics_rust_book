@@ -6,4 +6,3 @@ Really if you can't do it in a high-level language, it's because someone in a lo
 You'll also hear about these languages being really fast and super efficient. In essence, almost all computing relies on these languages.
 
 We also have to change directory to the home folder and type `cargo build bioinfo`, in addition to also running the program with `./target/debug/bioinfo`. What does all of this mean? Don't worry, we'll break it down in the next section.
-

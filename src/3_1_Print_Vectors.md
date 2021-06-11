@@ -15,10 +15,10 @@ fn main(){
 
 Can you spot the debug notation? It's the `:?` inside the `{}`! Rust is super smart, if we didn't have the debug and just wrote `println!("{}",thing_of_things)` like in our prior examples, we'd get an error like this:
 
-    the trait `std::fmt::Display` is not implemented
+`the trait std::fmt::Display is not implemented`
 
 But we'd also get this:
 
-    in format strings you may be able to use `{:?}` (or {:#?} for pretty-print) instead
+`in format strings you may be able to use {:?} (or {:#?} for pretty-print) instead`
 
 The first option is exactly what we needed, which leads us to the golden rule: figure out the output Rust gives us. Rust is pretty smart, it'll probably give us some useful clues (and in this case the exact fix) to what to do if we get an error!

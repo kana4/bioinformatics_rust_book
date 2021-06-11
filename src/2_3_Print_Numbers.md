@@ -21,4 +21,4 @@ fn main(){
 }
 ```
 
-Now that we have a variable, `println!` takes two parts, the first is formatting the print, while the second part is the variable to print. the quotes surround everything that will be printed, in our case, `{}` which is always the input variable. So we have stated to print only the variable.
+Now that we have a variable, `println!` takes two parts, the first is formatting the print, while the second part is the variable to print. the quotes surround everything that will be printed, in our case, `{}` which is always the input variable. So we have stated to print only the variable. We probably want to other things than just deal with numbers though, so let's try to 

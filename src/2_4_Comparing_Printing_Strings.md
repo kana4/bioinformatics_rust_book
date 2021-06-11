@@ -3,24 +3,26 @@
 I'll just come out and say it: in other interpreted languages, it's really simple to do things. Let's go with the classic, printing "Hello World!".
 
 Python: 
-```
-thing = "Hello World!"
-print(thing)
-```
+
+`thing = "Hello World!"`
+
+`print(thing)`
 
 R:
-```
-thing = "Hello World!"
-print(thing)
-```
+
+`thing = "Hello World!"`
+
+`print(thing)`
 
 And comparatively in Rust:
+
 ```
 fn main(){
     let thing="Hello World!";
     println!("{}", thing);
 }
 ```
+
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b7a9925991302bdd3802fa2a25c89d0e)
 
 

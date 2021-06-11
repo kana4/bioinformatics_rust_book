@@ -1,1 +1,0 @@
-// There's an incredible number of data structures and types in Rust, with each one having specific trade offs. We'll get our bearings and stick to Vec<u8>, a vector of unsigned 8-bit integers for now.
