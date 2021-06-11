@@ -3,4 +3,4 @@ authors = ["Kana"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Bioinformatics Rust Book"
+title = "Bioinformatics in Rust"

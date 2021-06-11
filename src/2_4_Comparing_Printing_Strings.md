@@ -1,4 +1,4 @@
-# Print
+# Comparing Printing Strings
 
 I'll just come out and say it: in other interpreted languages, it's really simple to do things. Let's go with the classic, printing "Hello World!".
 

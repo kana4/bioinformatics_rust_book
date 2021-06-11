@@ -20,15 +20,3 @@ There are a few things on our *TODO* list and we refer you to the original sourc
 Run `Cargo init`
 
 Our workspace should look something like this
-
-// fn n50(numbers: &[usize], nb_bases_total: usize) -> usize {
-//     let mut acc = 0;
-//     for val in numbers.iter() {
-//         acc += *val;
-//         if acc > nb_bases_total / 2 {
-//             return *val;
-//         }
-//     }
-
-//     numbers[numbers.len() - 1]
-// }
