@@ -12,3 +12,6 @@
 - [Vectors](./3_0_Vectors.md)
     - [Print Vectors](./3_1_Print_Vectors.md)
     - [Dot Notation](./3_2_Dot_Notation.md)
+    - [Brackets](./3_3_Brackets.md)
+    - [Notes on Vectors](./3_4_Notes_On_Vectors.md)
+- [Biological Sequencing Data](./4_0_Biological_Sequencing_Data.md)

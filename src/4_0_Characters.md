@@ -1,0 +1,5 @@
+# Characters
+
+Before we get into biological data, we first need to be able to give the computer knowledge of what an alphabet, or even a character is. Computers can only understand numbers, so how do we tell it we want alphabet characters? One way to do that is to choose a number for each character in some systematic way. One method could be instead of ABC we save 123 if we're using the location in the alphabet as our 8-bit integer. Since we know the alphabet, we can store numbers and still know what the numbers are supposed to say.
+
+Most commonly, this is done with [bytes](https://en.wikipedia.org/wiki/Byte). When your internet company's talking about speeds, megabits are different from megabytes! Each byte most commonly represents a character like A or T, but instead of A or T, it's a number. Since each number represents a character, we can write a word as a vector of numbers. In our first example of ABC, it would just be `vec![1,2,3]`
