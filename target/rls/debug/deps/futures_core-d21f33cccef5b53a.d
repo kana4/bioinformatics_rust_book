@@ -1,0 +1,11 @@
+/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/deps/futures_core-d21f33cccef5b53a.rmeta: /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/lib.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/future.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/stream.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/mod.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/poll.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/__internal/mod.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/__internal/atomic_waker.rs
+
+/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/deps/futures_core-d21f33cccef5b53a.d: /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/lib.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/future.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/stream.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/mod.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/poll.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/__internal/mod.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/__internal/atomic_waker.rs
+
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/lib.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/future.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/stream.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/mod.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/poll.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/__internal/mod.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/futures-core-0.3.15/src/task/__internal/atomic_waker.rs:

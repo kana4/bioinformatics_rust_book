@@ -1,0 +1,13 @@
+/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/deps/http_body-ac44e71dd5a0bda3.rmeta: /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/lib.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/empty.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/full.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/next.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/size_hint.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/mod.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/box_body.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/map_data.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/map_err.rs
+
+/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/deps/http_body-ac44e71dd5a0bda3.d: /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/lib.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/empty.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/full.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/next.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/size_hint.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/mod.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/box_body.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/map_data.rs /Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/map_err.rs
+
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/lib.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/empty.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/full.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/next.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/size_hint.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/mod.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/box_body.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/map_data.rs:
+/Users/l/.cargo/registry/src/github.com-1ecc6299db9ec823/http-body-0.4.2/src/combinators/map_err.rs:
