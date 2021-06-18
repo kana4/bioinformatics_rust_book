@@ -8,7 +8,7 @@ fn main(){
 }
 ```
 
-Ok slow down, what is a vector even? A vector in Rust is a sequence of things, in our case the numbers 1,2,3,4 one after the other. We could also make the vector with the following:
+Ok slow down, what is a vector even? A [vector](https://doc.rust-lang.org/rust-by-example/std/vec.html) in Rust is a sequence of things, in our case the numbers 1,2,3,4 one after the other. We could also make the vector with the following:
 
 ```
 fn main(){

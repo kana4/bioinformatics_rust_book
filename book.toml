@@ -4,3 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Bioinformatics in Rust"
+
+#[dependencies]
+#image = "0.23.14"
+#bioutils = "0.2.1"

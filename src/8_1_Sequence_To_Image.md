@@ -2,9 +2,7 @@
 
 At it's heart, Rust doesn't care whether or data is biological or not and since we've already learned how to keep our data in an integer format, all we need to do to create an image from our sequences is to learn how to use the image library to make our first image!
 
-In this example, we'll make each pixel a letter in our biological sequence, with a different color for each type of letter. If we applied this directly to a sequence, our image would be a single row of differing colored pixels. For example, AAACCC could be greengreegreenblueblueblue. If we think of an image as a quilt or mat of numbers, we could have our image be multiple sequences. Each row of pixels would be a sequence and these would be written out to a file like a typewriter, row by row, to create our final image.
-
-Let's try it! First, we'll create a sequence and create an image that's a row of pixels:
+In this example, we'll make each pixel a letter in our biological sequence, with a different color for each type of letter. If we applied this directly to a sequence, our image would be a single row of differing colored pixels. For example, AAACCC could be brownbrownbrowngreygreygrey. If we think of an image as a quilt or mat of numbers, we could have our image be multiple sequences. Each row of pixels would be a sequence and these would be written out to a file like a typewriter, row by row, to create our final image. Let's try it!
 
 ```
 // Import RgbImage from the Image crate
@@ -30,15 +28,15 @@ fn main() {
     // Print our unsigned integers for reference
     println!("{:?}", seq); 
 
-    // For each unsigned integer in our sequence, color the pixel corresponding to the x coordinate and y coordinate, color by the unsigned integer present.
-    for (x, &c) in seq.into_iter().enumerate() { 
+    // For each unsigned integer in our sequence 'c', color the pixel corresponding to the x coordinate and y coordinate, color by the unsigned integer present.
+    for (x_pixel_coord, &c) in seq.into_iter().enumerate() { 
         match c {
-            67 => img.put_pixel(x as u32, y_pixel_coord, RED_RGB), // 67 is b"A", set Adenosine color
-            65 => img.put_pixel(x as u32, y_pixel_coord, GREEN_RGB), // 65 is b"C", set Cytosine color
-            84 => img.put_pixel(x as u32, y_pixel_coord, BLUE_RGB), // 84 is b"T", set Thymine color
-            71 => img.put_pixel(x as u32, y_pixel_coord, PURPLE_RGB), // 71 is b"G", set Guanine color
-            78 => img.put_pixel(x as u32, y_pixel_coord, GRAY_RGB), // 110 is b"N", set Undetermined color
-            _ => img.put_pixel(x as u32, y_pixel_coord, BLACK_RGB), // 71 is b"G", set all other as black
+            67 => img.put_pixel(x_pixel_coord as u32, y_pixel_coord, RED_RGB), // 67 is b"A", set Adenosine color
+            65 => img.put_pixel(x_pixel_coord as u32, y_pixel_coord, GREEN_RGB), // 65 is b"C", set Cytosine color
+            84 => img.put_pixel(x_pixel_coord as u32, y_pixel_coord, BLUE_RGB), // 84 is b"T", set Thymine color
+            71 => img.put_pixel(x_pixel_coord as u32, y_pixel_coord, PURPLE_RGB), // 71 is b"G", set Guanine color
+            78 => img.put_pixel(x_pixel_coord as u32, y_pixel_coord, GRAY_RGB), // 110 is b"N", set Undetermined color
+            _ => img.put_pixel(x_pixel_coord as u32, y_pixel_coord, BLACK_RGB), // set all other as black
         };
     }
 
@@ -48,6 +46,7 @@ fn main() {
 }
 ```
 
+![My First Image](./img/myfirstimage.png)
 
 *Our very first image!*
 
