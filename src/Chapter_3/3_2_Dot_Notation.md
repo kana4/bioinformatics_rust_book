@@ -31,5 +31,8 @@ fn main(){
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=270b25fb22fee3383a695eff2bb33e3f)
 
-Congrats! We've not only used our first dot notation, our first function! It doesn't seem like it now, but `len()` is extremely powerful and a workhorse for Rust programmers of all levels.
+Congrats! We've not only used our first dot notation, our first function! It doesn't seem like it now, but `len()` is a workhorse for Rust programmers of all levels.
 
+![Margaret Hamilton](../img/Margaret_Hamilton.jpg)
+
+*[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) and software for Apollo. Thanks to early researchers, the world runs on computers! Credits: Wikipedia*
