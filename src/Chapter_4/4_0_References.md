@@ -1,7 +1,7 @@
 # References
 
 
-*!Difficult Section!*
+*Warning: Difficult Section!*
 
 References are one way to make code super efficient. The general idea is that we have some data and we want to reuse the data. In Python or R, we just have the data in a variable and that variable is copied over and over again whenever we want to use it. In most cases, we could have just made and stored the data once, and just referred to it other times.
 
