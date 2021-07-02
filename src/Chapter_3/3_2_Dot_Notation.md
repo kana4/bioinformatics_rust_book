@@ -31,7 +31,7 @@ fn main(){
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=270b25fb22fee3383a695eff2bb33e3f)
 
-Congrats! We've not only used our first dot notation, our first function! It doesn't seem like it now, but `len()` is a workhorse for Rust programmers of all levels.
+Congrats! We've not only used our first dot notation, our first function! It doesn't seem like it now, but `len()` is a workhorse for Rust programmers of all levels. Dot notation will help us be more concise and expressive in our programming. We want our programs (as) short and sweet (as possible).
 
 ![Margaret Hamilton](../img/Margaret_Hamilton.jpg)
 
