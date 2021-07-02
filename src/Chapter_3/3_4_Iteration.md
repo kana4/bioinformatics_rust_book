@@ -18,7 +18,6 @@ vector = c(1,2,3,4)
 for (i in 1:length(vector)) {
 
 }
-
 ```
 
 This is sometimes referred to as a process called iteration.
