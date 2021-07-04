@@ -9,6 +9,7 @@ There's a few steps we're going to do here:
 <ul> For each element in our sequence, check if the element is the same as the first element and push the result into our boolean vector. </ul>
 <ul> Print our boolean vector to see our results! </ul>
 
+```
 fn main(){
 
     let vector = b"AAAAA".to_vec();
@@ -29,4 +30,10 @@ fn main(){
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1bf1cb00cdfce69f3765253711c55c55)
 
-*Note:* There is always more than one way to do things in Rust. Can you think of other ways to test whether a sequence is a homopolymer?
+*Note:* There's always more than one way to do things in Rust. Can you think of other ways to test whether a sequence is a homopolymer?
+
+## Background
+
+//TODO 
+
+link to for loop

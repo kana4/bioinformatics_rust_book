@@ -20,7 +20,7 @@ for (i in 1:length(vector)) {
 }
 ```
 
-This is sometimes referred to as a process called iteration.
+This is sometimes referred to as iteration.
 
 
 // versions of iteration

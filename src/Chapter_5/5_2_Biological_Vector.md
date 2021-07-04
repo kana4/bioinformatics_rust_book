@@ -7,7 +7,37 @@ We've created a vector of ACTG and that the vector doesn't hold characters, but 
 ```
 fn main(){
     let dna = b"ACTG".to_vec();
-    println!("{}", dna);
+    let mut sum = 0;
+    for base in dna {
+        sum += base;
+    }
+    println!("{}", sum);
 }
 ```
+
+//TODO playground
+
+## Background: 
+
+
+
+//TODO link to mutable variable. 
+
+//TODO link to += notation.
+
+//TODO link for loops.
+
+// index 
+Mutable variables are variables that can change. Normally in Rust when we write `let` the variable cannot change, `mut` let's the program know that it should expect this variable to change. 
+
++= is shorthand notation for adding to a variable similar to the following pseudocode example:
+```
+x += y is the same as:
+x = x + y
+```
+
+In short, it means set our first variable on the left hand side [lhs]() to itself plus something.
+
+
+How to make for loops in Rust. Our for loop here takes the vector and for each element (`base`) adds to our variable `sum`.
 
