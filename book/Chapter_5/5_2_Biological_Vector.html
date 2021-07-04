@@ -168,9 +168,26 @@
 <p>We've created a vector of ACTG and that the vector doesn't hold characters, but bytes. Now that the computer has an idea of a biological sequence, we can start working with our biological data just like any other numeric vector! This includes things that we're more familiar with from math, and in this section we'll do something that we can only do once we've made our characters into numbers: find the sum! What's the sum of 'ACTG'? Let's find out!</p>
 <pre><code>fn main(){
     let dna = b&quot;ACTG&quot;.to_vec();
-    println!(&quot;{}&quot;, dna);
+    let mut sum = 0;
+    for base in dna {
+        sum += base;
+    }
+    println!(&quot;{}&quot;, sum);
 }
 </code></pre>
+<p>//TODO playground</p>
+<h2 id="background"><a class="header" href="#background">Background:</a></h2>
+<p>//TODO link to mutable variable. </p>
+<p>//TODO link to += notation.</p>
+<p>//TODO link for loops.</p>
+<p>// index 
+Mutable variables are variables that can change. Normally in Rust when we write <code>let</code> the variable cannot change, <code>mut</code> let's the program know that it should expect this variable to change. </p>
+<p>+= is shorthand notation for adding to a variable similar to the following pseudocode example:</p>
+<pre><code>x += y is the same as:
+x = x + y
+</code></pre>
+<p>In short, it means set our first variable on the left hand side <a href="">lhs</a> to itself plus something.</p>
+<p>How to make for loops in Rust. Our for loop here takes the vector and for each element (<code>base</code>) adds to our variable <code>sum</code>.</p>
 
                     </main>
 

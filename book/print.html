@@ -333,6 +333,7 @@ Dot notation is used when we have a thing and we want to do something with it. I
 <p>Before we get into biological data, we first need to be able to give the computer knowledge of what an alphabet, or even a character is. Computers can only understand numbers, so how do we tell it we want alphabet characters? One way to do that is to choose a number for each character in some systematic way. One method could be instead of ABC we save 123 if we're using the location in the alphabet as our integer. Since we know the alphabet, we can store numbers and still know what the numbers are supposed to say, and convert back and forth between numbers and characters.</p>
 <p>Most commonly, this is done with <a href="https://en.wikipedia.org/wiki/Byte">bytes</a>. When your internet company's talking about speeds, megabits are different from megabytes (8 bits to a byte)! Each byte most commonly represents a character like A or T, but instead of A or T, it's a number. Since each number represents a character, we can write a word as a vector of numbers. In our first example of 'ABC', it would just be <code>vec![1,2,3]</code>.</p>
 <p>In practice, 'A' isn't stored as 1, but as '65' in the <a href="https://en.wikipedia.org/wiki/ASCII">ASCII alphabet</a> and '41' in <a href="https://en.wikipedia.org/wiki/UTF-8">UTF-8</a>. This is to be useful to users and computers around the world; UTF-8 has a ton of stuff, even <a href="https://unicode.org/emoji/charts/full-emoji-list.html">emojis</a>!</p>
+<p>//TODO ascii table</p>
 <h2 id="references-1"><a class="header" href="#references-1">References</a></h2>
 <p>I really enjoyed Stanford's <a href="https://web.stanford.edu/class/cs101/bits-bytes.html">bits and bytes</a> section!</p>
 <h1 id="biological-sequences"><a class="header" href="#biological-sequences">Biological Sequences</a></h1>
@@ -349,9 +350,26 @@ Dot notation is used when we have a thing and we want to do something with it. I
 <p>We've created a vector of ACTG and that the vector doesn't hold characters, but bytes. Now that the computer has an idea of a biological sequence, we can start working with our biological data just like any other numeric vector! This includes things that we're more familiar with from math, and in this section we'll do something that we can only do once we've made our characters into numbers: find the sum! What's the sum of 'ACTG'? Let's find out!</p>
 <pre><code>fn main(){
     let dna = b&quot;ACTG&quot;.to_vec();
-    println!(&quot;{}&quot;, dna);
+    let mut sum = 0;
+    for base in dna {
+        sum += base;
+    }
+    println!(&quot;{}&quot;, sum);
 }
 </code></pre>
+<p>//TODO playground</p>
+<h2 id="background"><a class="header" href="#background">Background:</a></h2>
+<p>//TODO link to mutable variable. </p>
+<p>//TODO link to += notation.</p>
+<p>//TODO link for loops.</p>
+<p>// index 
+Mutable variables are variables that can change. Normally in Rust when we write <code>let</code> the variable cannot change, <code>mut</code> let's the program know that it should expect this variable to change. </p>
+<p>+= is shorthand notation for adding to a variable similar to the following pseudocode example:</p>
+<pre><code>x += y is the same as:
+x = x + y
+</code></pre>
+<p>In short, it means set our first variable on the left hand side <a href="Chapter_5/">lhs</a> to itself plus something.</p>
+<p>How to make for loops in Rust. Our for loop here takes the vector and for each element (<code>base</code>) adds to our variable <code>sum</code>.</p>
 <h1 id="check-sequence"><a class="header" href="#check-sequence">Check Sequence</a></h1>
 <p>Calculating the sum of a sequence is pretty cool, but probably isn't very useful to us in a direct sense. Let's do something with a little more direct application: checking if our sequence is a <a href="https://www.merriam-webster.com/dictionary/homopolymer">homopolymer</a>!</p>
 <p>There's a few steps we're going to do here:</p>
@@ -359,28 +377,33 @@ Dot notation is used when we have a thing and we want to do something with it. I
 <ul> Create a separate vector where each element is a boolean true/false. Rust gives us a really nice macro (vec![]) to make an empty vector. </ul>
 <ul> For each element in our sequence, check if the element is the same as the first element and push the result into our boolean vector. </ul>
 <ul> Print our boolean vector to see our results! </ul>
-<p>fn main(){</p>
-<pre><code>let vector = b&quot;AAAAA&quot;.to_vec();
+<pre><code>fn main(){
 
-let first_element = vector[0];
+    let vector = b&quot;AAAAA&quot;.to_vec();
     
-let mut boolean_vector: Vec&lt;bool&gt; = vec![];
+    let first_element = vector[0];
+        
+    let mut boolean_vector: Vec&lt;bool&gt; = vec![];
 
-// For each element, true or false: is the same as the first element    
-for element in vector {
-    boolean_vector.push(first_element == element)
+    // For each element, true or false: is the same as the first element    
+    for element in vector {
+        boolean_vector.push(first_element == element)
+    }
+
+    println!(&quot;{:?}&quot;, boolean_vector);
+
 }
-
-println!(&quot;{:?}&quot;, boolean_vector);
 </code></pre>
-<p>}</p>
-<pre><code>
-[playground](https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=1bf1cb00cdfce69f3765253711c55c55)
-
-*Note:* There is always more than one way to do things in Rust. Can you think of other ways to test whether a sequence is a homopolymer?</code></pre>
+<p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=1bf1cb00cdfce69f3765253711c55c55">playground</a></p>
+<p><em>Note:</em> There's always more than one way to do things in Rust. Can you think of other ways to test whether a sequence is a homopolymer?</p>
+<h2 id="background-1"><a class="header" href="#background-1">Background</a></h2>
+<p>//TODO </p>
+<p>link to for loop</p>
 <h1 id="image-background"><a class="header" href="#image-background">Image Background</a></h1>
 <h1 id="sequence-to-image"><a class="header" href="#sequence-to-image">Sequence To Image</a></h1>
 <h1 id="continuous-integration"><a class="header" href="#continuous-integration">Continuous Integration</a></h1>
+<p><a href="https://en.wikipedia.org/wiki/Continuous_integration">Continuous integration</a> (CI) is fancy terminology for automatically testing stuff when we publish code. If we could, we would run our code on a factory-fresh computer and document everything we did to have our code running. In continuous integration, we make a computer make a virtual computer doing exactly this. The virtual computer will be factory-fresh, and our continuous integration instructions will tell it to install prerequisites, move files, anything we need to have our code running. We then test to see if our code runs, and if it doesn't the code doesn't pass CI tests.</p>
+<p>This is usually related to Git and version control, which can get pretty complicated and deserves it's own <a href="https://git-scm.com/book/en/">book</a>.</p>
 
                     </main>
 
