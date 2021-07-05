@@ -25,4 +25,6 @@
     - [Sequence To Image](./Chapter_7/7_2_Sequence_To_Image.md)
     - [Colored Block](./Chapter_7/7_3_Colored_Block.md)
     - [Magnify Images](./Chapter_7/7_4_Magnify_Images.md)
-- [Continuous Integration](./9_0_Continuous_Integration.md)
+- [Continuous Integration](./Index/9_0_Continuous_Integration.md)
+- [Endianness](./Index/Endianness.md)
+- [ASCII Code Table](./Index/Ascii_Code_Table.md)

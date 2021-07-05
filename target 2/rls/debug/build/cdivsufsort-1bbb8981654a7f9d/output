@@ -1,0 +1,32 @@
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-apple-darwin")
+CC_x86_64-apple-darwin = None
+CC_x86_64_apple_darwin = None
+HOST_CC = None
+CC = None
+CFLAGS_x86_64-apple-darwin = None
+CFLAGS_x86_64_apple_darwin = None
+HOST_CFLAGS = None
+CFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2,sse3,ssse3")
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-DHAVE_CONFIG_H=1" "-o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/divsufsort.o" "-c" "c-sources/divsufsort.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-DHAVE_CONFIG_H=1" "-o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/sssort.o" "-c" "c-sources/sssort.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-DHAVE_CONFIG_H=1" "-o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/trsort.o" "-c" "c-sources/trsort.c"
+exit code: 0
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-DHAVE_CONFIG_H=1" "-o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/utils.o" "-c" "c-sources/utils.c"
+exit code: 0
+AR_x86_64-apple-darwin = None
+AR_x86_64_apple_darwin = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/libdivsufsort.a" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/divsufsort.o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/sssort.o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/trsort.o" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/c-sources/utils.o"
+exit code: 0
+running: "ar" "s" "/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out/libdivsufsort.a"
+exit code: 0
+cargo:rustc-link-lib=static=divsufsort
+cargo:rustc-link-search=native=/Users/l/Desktop/projects/github/bioinformatics_rust_book/target/rls/debug/build/cdivsufsort-1bbb8981654a7f9d/out
