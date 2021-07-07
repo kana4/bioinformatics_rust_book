@@ -35,4 +35,4 @@ Congrats! We've not only used our first dot notation, our first function! It doe
 
 ![Margaret Hamilton](../img/Margaret_Hamilton.jpg)
 
-*[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) and software for Apollo. Thanks to early researchers, the world runs on computers! Credits: Wikipedia*
+*[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) and software for Apollo. Dot notation saves us space (no pun intended). Thanks to early researchers, the world runs on computers! Credits: Wikipedia*

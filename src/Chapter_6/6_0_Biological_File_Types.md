@@ -6,7 +6,6 @@ Biological data is packaged in file types for targeted purposes. If a variant an
 
 [Official File Format Specifications](http://samtools.github.io/hts-specs/). Includes VCF,  SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget
 
-
 [What VCF data looks like]()
 ```
 #CHROM POS
@@ -26,7 +25,7 @@ NA00002 1|0:48:8:51,51 0|1:3:5:65,3 2|1:2:0:18,2 0|0:48:4:51,51 0/2:17:2
 NA00003 1/1:43:5:.,. 0/0:41:3 2/2:35:4 0/0:61:2 1/1:40:3
 ```
 
-[What SAM data looks like:]()
+[What SAM data looks like]()
 ```
 @HD VN:1.6 SO:coordinate
 @SQ SN:ref LN:45

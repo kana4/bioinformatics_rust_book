@@ -1,6 +1,6 @@
 # Summary
 
-- [An Introduction](./Chapter_1/1_0_An_Introduction.md)
+- [Introduction](./Chapter_1/1_0_Introduction.md)
     - [Background](./Chapter_1/1_1_Background.md)
 - [Ready Go](./Chapter_2/2_0_Ready_Go.md)
     - [Add, Subtract, Multiply, Divide](./Chapter_2/2_1_Add_Subtract_Multiply_Divide.md)
