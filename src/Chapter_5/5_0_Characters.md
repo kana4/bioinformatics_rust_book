@@ -6,9 +6,8 @@ Most commonly, this is done with [bytes](https://en.wikipedia.org/wiki/Byte). Wh
 
 In practice, 'A' isn't stored as 1, but as '65' in the [ASCII alphabet](https://en.wikipedia.org/wiki/ASCII) and '41' in [UTF-8](https://en.wikipedia.org/wiki/UTF-8). This is to be useful to users and computers around the world; UTF-8 has a ton of stuff, even [emojis](https://unicode.org/emoji/charts/full-emoji-list.html)!
 
-//TODO ascii table
-
 ## References 
 
 I really enjoyed Stanford's [bits and bytes](https://web.stanford.edu/class/cs101/bits-bytes.html) section!
 
+[ASCII Alphabet Table](../Index/Ascii_Code_Table.md)

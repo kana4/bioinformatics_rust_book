@@ -3,6 +3,7 @@
 Mutable variables are variables that can change. Normally in Rust when we write `let` the variable cannot change, `mut` let's the program know that it should expect this variable to change. 
 
 += is shorthand notation for adding to a variable similar to the following pseudocode example:
+
 ```
 x += y is the same as:
 x = x + y

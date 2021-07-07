@@ -46,7 +46,7 @@ fn main() {
 }
 ```
 
-![My First Image](./img/myfirstimage.png)
+![My First Image](../img/myfirstimage.png)
 
 *Our very first image!*
 

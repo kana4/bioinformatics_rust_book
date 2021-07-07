@@ -11,3 +11,8 @@ fn main(){
     // DNA vector containing a base we're unsure of, but think it's present.
     let dna_with_n = b"ACTNG".to_vec();
 ```
+
+![2mm Crystallized Histone Octamer](../img/histone_octamer_crystal.jpg)
+
+[2mm Crystallized Histone Octamer](https://archive.org/details/MSFC-9807365)
+

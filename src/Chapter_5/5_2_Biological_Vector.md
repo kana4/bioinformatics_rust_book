@@ -6,38 +6,41 @@ We've created a vector of ACTG and that the vector doesn't hold characters, but 
 
 ```
 fn main(){
-    let dna = b"ACTG".to_vec();
+
+    let dna = b"ACT".to_vec();
+
     let mut sum = 0;
+
     for base in dna {
         sum += base;
     }
+
     println!("{}", sum);
+
+    // Prints 216
 }
 ```
 
-//TODO playground
+[Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=343748b7922270bccc2ec0cfa84d245c)
 
-## Background: 
+## Links: 
 
+The `mut` keyword: a [mutable](https://doc.rust-lang.org/rust-by-example/scope/borrow/mut.html) variable. 
 
+`+=` notation: [Adding](https://doc.rust-lang.org/book/appendix-02-operators.html) to a variable.
 
-//TODO link to mutable variable. 
+`-=` notation: [Subtracting](https://doc.rust-lang.org/book/appendix-02-operators.html) to a variable.
 
-//TODO link to += notation.
+Definitions from the Rust language appendix:
 
-//TODO link for loops.
-
-// index 
-Mutable variables are variables that can change. Normally in Rust when we write `let` the variable cannot change, `mut` let's the program know that it should expect this variable to change. 
-
-+= is shorthand notation for adding to a variable similar to the following pseudocode example:
 ```
-x += y is the same as:
-x = x + y
++= Arithmetic addition and assignment, AddAssign
+
+-= Arithmetic subtraction and assignment, SubAssign
 ```
 
-In short, it means set our first variable on the left hand side [lhs]() to itself plus something.
+[Rust Operators](https://doc.rust-lang.org/book/appendix-02-operators.html)
 
+Writing our first [For loop: Rust by Example](https://doc.rust-lang.org/rust-by-example/flow_control/for.html)
 
-How to make for loops in Rust. Our for loop here takes the vector and for each element (`base`) adds to our variable `sum`.
 

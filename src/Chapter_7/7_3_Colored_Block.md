@@ -36,4 +36,4 @@ fn main() {
 }
 ```
 
-![My Second Image](./img/mysecondimage.jpg)
+![My Second Image](../img/mysecondimage.jpg)
