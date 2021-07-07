@@ -1,8 +1,7 @@
 # Summary
 
 - [An Introduction](./Chapter_1/1_0_An_Introduction.md)
-    - [Definitions and Background](./Chapter_1/1_1_Definitions_and_Background.md)
-    - [Binary vs Library](./Chapter_1/1_2_Binary_vs_Library.md)
+    - [Background](./Chapter_1/1_1_Background.md)
 - [Ready Go](./Chapter_2/2_0_Ready_Go.md)
     - [Add, Subtract, Multiply, Divide](./Chapter_2/2_1_Add_Subtract_Multiply_Divide.md)
     - [Semicolons](./Chapter_2/2_2_Semicolons.md)
