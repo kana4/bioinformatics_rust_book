@@ -321,12 +321,13 @@ Dot notation is used when we have a thing and we want to do something with it. I
 <p><em>Rustaceans are super nice, joining the chats is one of the best ways to learn! Image credits: <a href="https://rustacean.net">Karen Rustad Tölva</a></em></p>
 <h1 id="references"><a class="header" href="#references">References</a></h1>
 <p><em>Warning: Difficult Section!</em></p>
-<p>References are one way to make code super efficient. The general idea is that we have some data and we want to reuse the data. In Python or R, we just have the data in a variable and that variable is copied over and over again whenever we want to use it. In most cases, we could have just made and stored the data once, and just referred to it other times.</p>
-<p>In a more concrete example, Rust makes a book (our data), stores it on a shelf, and whenever someone wants some information from the book, we  let them know where the book is on the shelf rather than making a copy of the whole book. Making copies of a book in the real world is expensive; the same holds true in computation. On the other hand, our new method not only saves us the time of copying a whole book, but means we don't have to walk to the shelf ourselves, and lets us direct a revolving door of people that want books.</p>
-<p>References are a new concept comparing to Python and R, let's see what it would look like in a code block</p>
+<p>References are one way to make code super efficient. The general idea is that we memorized some data, and instead of re-memorizing it we refer to it. In Python or R, we just have the data in a variable and that variable is copied over and over again whenever we want to use it. In most cases, we could have just made and memorized the data once and referred to it in the rest of the program.</p>
+<p>In a more concrete example, Rust makes a book (our data), stores it on a shelf, and whenever someone wants some information from the book, we let them know where the book is on the shelf rather than making a copy of the whole book. Making copies of a book in the real world is expensive; the same holds true in computation. On the other hand, our new method not only saves us the time of copying a whole book, but means we don't have to walk to the shelf ourselves, and lets us direct a revolving door of people that want books.</p>
 <h1 id="ownership"><a class="header" href="#ownership">Ownership</a></h1>
-<p><em>Warning: Difficult Section!</em></p>
-<p>Ownership is one of the defining and central ideas of the Rust language. Who else could explain it better than the language developers themselves? </p>
+<p>Ownership and references are some of the defining and central ideas of the Rust language. Who else could explain it better than the language developers themselves?</p>
+<p>The Rust Language Book:</p>
+<p><a href="https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html">References</a></p>
+<p><a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Ownership</a></p>
 <h1 id="notes"><a class="header" href="#notes">Notes</a></h1>
 <p>We've covered a few Rust and programming concepts so far, but we aren't writing a book on Rust basics; we can't write a better book than the creators of the language! We want to focus on doing things in bioinformatics, so from here we're going to link background information in the <a href="https://doc.rust-lang.org/book/">Rust books</a> or this book's index for bioinformatics background. Next, making characters into numbers!</p>
 <p><img src="Chapter_4/../img/binary_heart.jpg" alt="xkcd_heart" /></p>
@@ -680,7 +681,7 @@ fn main() {
 <p><img src="Chapter_7/../img/squinting.png" alt="squinting" /></p>
 <p><em>User trying to see our 10x10 pixel image</em></p>
 <pre><code>fn main(){
-
+https://docs.rs/image/0.23.14/image/imageops/fn.resize.html
 }
 </code></pre>
 <h1 id="index"><a class="header" href="#index">Index</a></h1>

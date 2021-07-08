@@ -9,6 +9,6 @@ We've made our images, but they seem a little small. We could make them bigger b
 
 ```
 fn main(){
-
+https://docs.rs/image/0.23.14/image/imageops/fn.resize.html
 }
 ```
