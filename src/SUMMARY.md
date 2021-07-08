@@ -21,11 +21,17 @@
     - [Integer Overflow](./Chapter_5/5_3_Integer_Overflow.md)
     - [Check Sequence](./Chapter_5/5_4_Check_Sequence.md)
 - [Biological File Types](./Chapter_6/6_0_Biological_File_Types.md)
+    - [VCF](./Chapter_6/6_1_vcf.md)
+    - [SAM and BAM](./Chapter_6/6_2_sam_bam.md)
 - [Images](./Chapter_7/7_0_Images.md)
     - [Image Background](./Chapter_7/7_1_Image_Background.md)
     - [Sequence To Image](./Chapter_7/7_2_Sequence_To_Image.md)
     - [Colored Block](./Chapter_7/7_3_Colored_Block.md)
     - [Magnify Images](./Chapter_7/7_4_Magnify_Images.md)
-- [Continuous Integration](./Index/Continuous_Integration.md)
-- [Endianness](./Index/Endianness.md)
-- [ASCII Code Table](./Index/Ascii_Code_Table.md)
+- [Index](./Index/Index.md)
+    - [Continuous Integration](./Index/Continuous_Integration.md)
+    - [Endianness](./Index/Endianness.md)
+    - [ASCII Code Table](./Index/Ascii_Code_Table.md)
+<!-- - [Guaranteed Random](./) -->
+<!-- https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1f1fea9a9ea9b07002c17129e1367752 -->
+<!-- https://xkcd.com/221/ -->

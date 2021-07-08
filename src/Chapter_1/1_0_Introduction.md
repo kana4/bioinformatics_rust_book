@@ -1,4 +1,4 @@
-# An Introduction
+# Introduction
 
 ![amaryllis](../img/amaryllis.jpg)
 *Amaryllis hybrid, London Horticulture Society*

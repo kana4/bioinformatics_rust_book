@@ -36,4 +36,8 @@ fn main() {
 }
 ```
 
-![My Second Image](../img/mysecondimage.jpg)
+TADA!
+
+![My Second Image](../img/mysecondimage.png)
+
+*Our Second Image! A lot more color than our first!*

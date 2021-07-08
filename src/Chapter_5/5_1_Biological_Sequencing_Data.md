@@ -12,7 +12,6 @@ fn main(){
     let dna_with_n = b"ACTNG".to_vec();
 ```
 
-![2mm Crystallized Histone Octamer](../img/histone_octamer_crystal.jpg)
+![2mm Crystallized Histone Octamer](../img/histone_octamer_small.jpg)
 
-[2mm Crystallized Histone Octamer](https://archive.org/details/MSFC-9807365)
-
+*[Crystallized Histone Octamer (2mm)](https://archive.org/details/MSFC-9807365) DNA sequences are wrapped around proteins called [histones](https://en.wikipedia.org/wiki/Histone). If put under the right pressure and temperature, these proteins can be made into crystals! Picture Credits: NASA, Dan Carter of New Century Pharmaceuticals*

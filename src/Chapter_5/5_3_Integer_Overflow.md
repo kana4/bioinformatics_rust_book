@@ -22,7 +22,7 @@ fn main(){
 }
 ```
 
-Don't worry though, we can fix that easily by converting our `sum` variable into an [unsigned 64-bit integer](https://doc.rust-lang.org/std/primitive.u64.html) (u64). The max number for this integer type: 18,446,744,073,709,551,615! This also means we need to change each element of the vector to a u64, as we can't add different types of integers.
+Don't worry though, we can fix that easily by converting our `sum` variable into an [unsigned 64-bit integer](https://doc.rust-lang.org/std/primitive.u64.html) (u64). The max number for this integer type: 18,446,744,073,709,551,615! This also means we need to change each element of the vector to a u64 (using the `as` keyword), as we can't add different types of integers.
 
 ```
 fn main(){
@@ -51,6 +51,6 @@ fn main(){
 
 ## Background
 
-[Integer types](https://doc.rust-lang.org/reference/types/numeric.html)
+[Numeric types](https://doc.rust-lang.org/reference/types/numeric.html)
 
-Converting integers
+Converting between [('casting')](https://doc.rust-lang.org/rust-by-example/types/cast.html) numeric types with `as`

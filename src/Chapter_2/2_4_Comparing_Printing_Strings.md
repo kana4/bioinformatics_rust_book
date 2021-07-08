@@ -1,6 +1,6 @@
 # Comparing Printing Strings
 
-I'll just come out and say it: in other interpreted languages, it's really simple to do things. Let's go with the classic, printing "Hello World!".
+I'll just come out and say it: in other [interpreted](https://en.wikipedia.org/wiki/Interpreter_(computing)) languages, it's really simple to do things. Let's go with the classic: printing "Hello World!".
 
 Python: 
 
@@ -24,7 +24,6 @@ fn main(){
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b7a9925991302bdd3802fa2a25c89d0e)
-
 
 Why is it so much longer in Rust? With great power comes having to be specific! Let's break it down based on what we learned so far.
 

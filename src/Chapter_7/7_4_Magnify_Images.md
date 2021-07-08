@@ -7,7 +7,6 @@ We've made our images, but they seem a little small. We could make them bigger b
 
 *User trying to see our 10x10 pixel image*
 
-//TODO magnify image
 ```
 fn main(){
 
