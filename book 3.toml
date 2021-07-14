@@ -1,6 +1,0 @@
-[book]
-authors = ["Kana"]
-language = "en"
-multilingual = false
-src = "src"
-title = "Bioinformatics in Rust"

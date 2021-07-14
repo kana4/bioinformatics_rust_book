@@ -2,7 +2,7 @@
 
 If you look closely, we didn't print the vector just yet, for that we need something called `debug`!
 
-Debug is something new if you're coming from other languages like R or Python, and it's something that we don't really need to know so we'll just leave it at: *We neeeeeeed it!* At least for vectors.
+Debug is something new if you're coming from other languages like R or Python, and it's something that we don't really need to know how it works, so we'll just leave it at: *We neeeeeeed it!* At least for vectors.
 
 ```
 fn main(){
@@ -21,4 +21,4 @@ But we'd also get this:
 
 `in format strings you may be able to use {:?} (or {:#?} for pretty-print) instead`
 
-The first option is exactly what we needed, which leads us to the golden rule: figure out the output Rust gives us. Rust is pretty smart, it'll probably give us some useful clues (and in this case the exact fix) to what to do if we get an error!
+The first option is exactly what we needed, which leads us to the golden rule: figure out the output Rust gives us. Rust is pretty smart, it'll probably give us some useful clues (and in this case the exact fix) to what to do if we get an error! It's a safe troubleshooting default if we get an error when printing to try add in the `:?`.

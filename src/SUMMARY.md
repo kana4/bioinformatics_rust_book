@@ -4,14 +4,15 @@
     - [Background](./Chapter_1/1_1_Background.md)
 - [Ready Go](./Chapter_2/2_0_Ready_Go.md)
     - [Add, Subtract, Multiply, Divide](./Chapter_2/2_1_Add_Subtract_Multiply_Divide.md)
-    - [Semicolons](./Chapter_2/2_2_Semicolons.md)
-    - [Print Numbers](./Chapter_2/2_3_Print_Numbers.md)
-    - [Comparing Printing Strings](./Chapter_2/2_4_Comparing_Printing_Strings.md)
-    - [Level Cleared!](./Chapter_2/2_5_Level_Cleared.md)
+    - [Print Numbers](./Chapter_2/2_2_Print_Numbers.md)
+    - [Comparing Printing Strings](./Chapter_2/2_3_Comparing_Printing_Strings.md)
+    - [Level Cleared!](./Chapter_2/2_4_Level_Cleared.md)
 - [Vectors](./Chapter_3/3_0_Vectors.md)
     - [Print Vectors](./Chapter_3/3_1_Print_Vectors.md)
     - [Dot Notation](./Chapter_3/3_2_Dot_Notation.md)
     - [Notes on Vectors](./Chapter_3/3_3_Notes_On_Vectors.md)
+    - [For Loop](./Chapter_3/3_4_For_Loops.md)
+    - [Iteration](./Chapter_3/3_5_Iteration.md)
 - [References](./Chapter_4/4_0_References.md)
     - [Ownership](./Chapter_4/4_1_Ownership.md)
     - [Chapter 4 Notes](./Chapter_4/4_2_Notes.md)
@@ -32,6 +33,4 @@
     - [Continuous Integration](./Index/Continuous_Integration.md)
     - [Endianness](./Index/Endianness.md)
     - [ASCII Code Table](./Index/Ascii_Code_Table.md)
-<!-- - [Guaranteed Random](./) -->
-<!-- https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1f1fea9a9ea9b07002c17129e1367752 -->
-<!-- https://xkcd.com/221/ -->
+    - [Semicolons](./Index/Semicolons.md)

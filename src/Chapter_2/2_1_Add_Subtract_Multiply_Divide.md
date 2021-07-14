@@ -2,6 +2,7 @@
 
 ```
 fn main(){
+
     // Make a variable a that holds 1
     let a = 1;
 
@@ -17,8 +18,11 @@ fn main(){
     // Divide by 3!
     let e = d / 3;
 
-    // The variable e holds 3, but you'll have to take our word for it for now, we're going to print in the next few sections!
+    // The variable e holds 3
 }
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=a31f2eadc4a15117a95e13fb5b271fc3)
+
+
+Each line is separated by a semicolon, letting our program know to keep going. If there isn't a semicolon at the end of a line, return the result of that line. For more information: [Semicolons](./Index/Semicolons.md)

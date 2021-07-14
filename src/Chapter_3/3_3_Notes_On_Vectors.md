@@ -4,4 +4,10 @@ Vectors are used in Python and R as one of the main objects and it's no differen
 
 ![Ferris Hearts](../img/ferris_love.jpg)
 
-*Rustaceans are super nice, joining the chats is one of the best ways to learn! Image credits: [Karen Rustad Tölva](https://rustacean.net)*
+*Rustaceans are super helpful and encouraging, joining the chats is one of the best ways to learn! Image credits: [Karen Rustad Tölva](https://rustacean.net)*
+
+Rust chats:
+
+[Rust Discord!](https://discord.com/invite/rust)
+
+[Rust Language Forums](https://users.rust-lang.org)
