@@ -247,17 +247,23 @@
 </code></pre>
 <p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=eaee565b026b99fc808e6245da640cc0">playground</a></p>
 <h1 id="comparing-printing-strings"><a class="header" href="#comparing-printing-strings">Comparing Printing Strings</a></h1>
-<p>In <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)">interpreted</a> languages, doing things is really short and succinct. Let's go with a classic: printing &quot;Hello World!&quot;.
-In Python: </p>
-<p><code>thing = &quot;Hello World!&quot;</code></p>
-<p><code>print(thing)</code></p>
-<p>In R:</p>
-<p><code>thing = &quot;Hello World!&quot;</code></p>
-<p><code>print(thing)</code></p>
-<p>And in Rust:</p>
-<pre><code>fn main(){
+<p>In <a href="https://en.wikipedia.org/wiki/Interpreter_(computing)">interpreted</a> languages, doing things is really short and succinct. Let's go with a classic: printing &quot;Hello World!&quot;.</p>
+<pre><code># In Python: 
 
-    let thing=&quot;Hello World!&quot;;
+thing = &quot;Hello World!&quot;
+
+print(thing)
+</code></pre>
+<pre><code># In R:
+thing = &quot;Hello World!&quot;
+
+print(thing)
+</code></pre>
+<pre><code>// In Rust:
+
+fn main(){
+
+    let thing = &quot;Hello World!&quot;;
 
     println!(&quot;{}&quot;, thing);
     

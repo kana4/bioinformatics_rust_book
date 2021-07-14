@@ -2,24 +2,28 @@
 
 
 In [interpreted](https://en.wikipedia.org/wiki/Interpreter_(computing)) languages, doing things is really short and succinct. Let's go with a classic: printing "Hello World!".
-In Python: 
-
-`thing = "Hello World!"`
-
-`print(thing)`
-
-In R:
-
-`thing = "Hello World!"`
-
-`print(thing)`
-
-And in Rust:
 
 ```
+# In Python: 
+
+thing = "Hello World!"
+
+print(thing)
+```
+
+```
+# In R:
+thing = "Hello World!"
+
+print(thing)
+```
+
+```
+// In Rust:
+
 fn main(){
 
-    let thing="Hello World!";
+    let thing = "Hello World!";
 
     println!("{}", thing);
     
