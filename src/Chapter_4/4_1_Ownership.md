@@ -8,3 +8,8 @@ The Rust Language Book:
 
 [Ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
 
+A visualization we really liked is from [Rustviz](https://github.com/rustviz/rustviz):
+
+![Rustviz](../img/rustviz.png)
+*Simple example of visualization of ownership and references.*
+

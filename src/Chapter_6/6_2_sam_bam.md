@@ -2,6 +2,7 @@
 
 
 What SAM data looks like:
+
 ```
 @SQ	SN:chr1	LN:249250621
 @SQ	SN:chr2	LN:243199373

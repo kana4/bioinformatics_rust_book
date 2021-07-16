@@ -1,6 +1,6 @@
 # VCF File Format
 
-What VCF data looks like:
+First, a quick look at what VCF data looks like:
 
 ```
 ##fileformat=VCFv4.0
@@ -63,3 +63,14 @@ Y	4177733	.	A	G	40	.	AC=1;AN=2;DP=177;NS=61
 Y	4305332	.	T	C	46	.	AC=1;AN=2;DP=174;NS=69
 
 ```
+
+Even if we don't know about the file type, we can start to get an idea that the file has a header followed by a table-looking structure of the actual data. In VCF, each line in a header is denoted by `##`, whereas the column names are denoted by a single `#`. To summarize each column in the data:
+
+<ul>Chromosome: Which chromosome is the alteration on?</ul>
+<ul>Position: What position on the chromosome is the alteration on?</ul>
+<ul>ID: If this is a well known alteration, what's the ID?</ul>
+<ul>Ref: What's the base in the genome reference?</ul>
+<ul>Alt: What's the base altered to?</ul>
+<ul>Quality: What's the quality related to the alteration or in a not-correct not-incorrect answer, how sure are we of the alteration?</ul>
+<ul>Filter: Does the alteration pass a cutoff for quality, or in a not-correct not-incorrect answer, are we more sure or unsure of the alteration?</ul>
+<ul>Info: Other information that we couldn't fit into the other columns</ul>

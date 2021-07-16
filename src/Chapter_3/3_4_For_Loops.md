@@ -37,5 +37,3 @@ fn main(){
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=5eac305bb88b46f33e9ba4d264f3d349)
-
-In Rust, there are many ways to achieve this type of behavior, read about one of the most powerful methods in the next section!
