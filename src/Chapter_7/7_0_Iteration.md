@@ -12,8 +12,6 @@ fn main(){
     let sum = vector.iter().sum::<u64>();
     println!("{}", sum);
 }
-
-
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bcc6dac13b035b705ca17ee8fdd9fe2e)
