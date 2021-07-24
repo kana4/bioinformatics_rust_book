@@ -19,5 +19,5 @@ We need comments to let people know what we're doing in between code, and we'll 
 Our comment is in the `main` function, e.g. `fn main(){}`, specifying we're making a binary.
 
 ![hsa nasa](../img/hsa_nasa.jpg)
-*Electron density projection of human serum albumin protein taken by NASA. Even complicated biological things are made of smaller, simpler things!* 
+*Electron density projection of human serum albumin protein taken by NASA. Even complicated things are made of smaller, simpler things!* 
 

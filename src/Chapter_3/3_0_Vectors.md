@@ -20,3 +20,7 @@ fn main(){
     let thing_of_things = vec![thing1,thing2,thing3,thing4];
 }
 ```
+
+![not that kind of vector](../img/not_that_vector.jpg)
+
+*Vectors are cool*

@@ -37,3 +37,6 @@ fn main(){
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=eaee565b026b99fc808e6245da640cc0)
+
+![Doge Says Hello World](../img/doge_hello_world.jpg)
+*My favorite meme: Doge has computer, glasses, and coins! Much Wow*
