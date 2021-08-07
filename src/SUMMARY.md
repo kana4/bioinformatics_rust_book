@@ -24,7 +24,7 @@
 - [Biological File Types](./Chapter_6/6_0_Biological_File_Types.md)
     - [VCF](./Chapter_6/6_1_vcf.md)
     - [SAM and BAM](./Chapter_6/6_2_sam_bam.md)
-- [Iteration](./Chapter_7_Iteration.md)
+- [Iteration](./Chapter_7/7_0_Iteration.md)
 - [Images](./Chapter_8/8_0_Images.md)
     - [Image Background](./Chapter_8/8_1_Image_Background.md)
     - [Sequence To Image](./Chapter_8/8_2_Sequence_To_Image.md)
