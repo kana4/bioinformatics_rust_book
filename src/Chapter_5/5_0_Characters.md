@@ -6,8 +6,15 @@ Most commonly, this is done with [bytes](https://en.wikipedia.org/wiki/Byte). Wh
 
 In practice, 'A' isn't stored as 1, but as '65' in the [ASCII alphabet](https://en.wikipedia.org/wiki/ASCII) and '41' in [UTF-8](https://en.wikipedia.org/wiki/UTF-8). This is to be useful to users and computers around the world; UTF-8 has a ton of stuff, even [emojis](https://unicode.org/emoji/charts/full-emoji-list.html)!
 
+My favorite UTF-8: 40... in [cuneiform](http://oracc.museum.upenn.edu/doc/help/visitingoracc/fonts/cuneiform1/index.html)! 𒐏
+
+![cuneiform table](../img/cuneiform.png)
+
+*[cuneiform](http://oracc.museum.upenn.edu/doc/help/visitingoracc/fonts/cuneiform1/index.html) table with utf8 designations by [ORACC](http://oracc.museum.upenn.edu/doc/help/visitingoracc/index.html)*
+
 ## References 
 
 I really enjoyed Stanford's [bits and bytes](https://web.stanford.edu/class/cs101/bits-bytes.html) section!
 
 [ASCII Alphabet Table](../Index/Ascii_Code_Table.md)
+
