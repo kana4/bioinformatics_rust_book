@@ -1,2 +1,1 @@
-# FASTA File Format
-
+# VCF

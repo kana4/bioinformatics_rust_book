@@ -25,12 +25,17 @@ fn main(){
 
     println!("{:?}", boolean_vector);
 
+    // prints [true, true, true, true, true]
 }
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1bf1cb00cdfce69f3765253711c55c55)
 
+![Bender Dream](../img/bender_01.jpg)
+*Bender dreams in boolean vectors*
 
+## Background
 
+Boolean vector representation: [Bit Array](https://en.wikipedia.org/wiki/Bit_array)
 
-*Note:* There's always more than one way to do things, can you think of other ways to test whether a sequence is a homopolymer?
+[Bit Vector](https://crates.io/crates/bitvec), a crate specialized for this kind of thing, but I don't really understand it yet!

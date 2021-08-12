@@ -14,8 +14,7 @@ Some useful shortcuts:
 
 `(control+c)` to cancel whatever the terminal is doing. `(control+a)` and `(control+e)` to skip to beginning and end of a line. Of course on mac, can't go without `(command+c)` and `(command+v)`: copy and paste. `(control+u)` clears a line, or we can just clear everything in the terminal by typing the command `clear`.
 
-
-Bonus: I <3 custom terminals!
+Bonus: I love custom terminals!
 
 Open a terminal and go to Terminal>preferences>profiles to choose your profile or create a custom one. Currently I like the 'novel' template and cyberpunk colors!
 

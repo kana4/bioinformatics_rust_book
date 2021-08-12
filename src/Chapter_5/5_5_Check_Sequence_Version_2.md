@@ -23,20 +23,19 @@ fn main(){
     for element in vector {
         boolean = boolean & (first_element == element);
     }
-    
+
     println!("Is our sequence a homopolymer? {:?}", boolean);
-    
+
     // prints true
 }
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e6c7c5bb976fed2f87ecc9edd50206d2)
 
+For the speed junkies, a question arises: couldn't we stop if we found a `false` and save time? Yep! This is called [short circuiting](./Index/Short_Circuit.md), and a lot of Rust functions are built with this in mind!
 
 *Background:*
 
 [boolean operation: &](https://doc.rust-lang.org/reference/types/boolean.html)
-
-For the speed junkies, a question arises: couldn't we stop if we found a `false` and save time? Yep! Take a peek at the bonus section!
 
 *Note:* There's always more than one way to do things, can you think of other ways to test whether a sequence is a homopolymer?
