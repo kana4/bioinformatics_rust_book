@@ -16,3 +16,4 @@ BAM data is the same as SAM only compressed and in binary form. When converted, 
 ```
 
 
+[Official File Format Specifications](http://samtools.github.io/hts-specs/). Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget

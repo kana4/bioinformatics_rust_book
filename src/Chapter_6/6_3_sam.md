@@ -58,4 +58,6 @@ SOLEXA-1GA-2_2_FC20EMB:5:172:417:550	16	chr1	10242	25	36M	*	0	0	AACCCTAAACCCTAAA
 
 The first few lines starting with an `@` symbol are the 'header' of the file. We can see that we have a few chromosomes, and the final header line says what command and tool (`samtools`) we used to create the sam file. Now the data!
 
-The data is 
+In this file, 
+
+[Official File Format Specifications](http://samtools.github.io/hts-specs/). Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget

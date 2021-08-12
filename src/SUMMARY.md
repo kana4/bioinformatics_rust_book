@@ -22,7 +22,7 @@
     - [Integer Overflow](./Chapter_5/5_3_Integer_Overflow.md)
     - [Check Sequence](./Chapter_5/5_4_Check_Sequence.md)
 - [Biological File Types](./Chapter_6/6_0_Biological_File_Types.md)
-    - [VCF](./Chapter_6/6_1_fasta.md)
+    - [FASTA and FASTQ](./Chapter_6/6_1_fasta_fastq.md)
     - [VCF](./Chapter_6/6_2_vcf.md)
     - [SAM](./Chapter_6/6_3_sam.md)
     - [BAM](./Chapter_6/6_4_bam.md)

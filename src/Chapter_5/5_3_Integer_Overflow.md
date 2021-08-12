@@ -48,7 +48,7 @@ fn main(){
 ```
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=b0c5cfb4478657b0bbdb1a19c3f37f41)
 
-![Pac Man Integer Overflow!](../img/pacman.jpg) 
+![Pac Man Integer Overflow!](../img/pacman.jpg)
 
 *Pac Man Integer Overflow! At level 256, Pac Man turns into the [Pac Matrix](https://errors.fandom.com/wiki/Pac_Man_-_Infamous_Kill_Screen_Bug) for the same reasons we get an error here. I wish I was that good at Pac Man!*
 
