@@ -23,7 +23,11 @@ fn main(){
 
 [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=343748b7922270bccc2ec0cfa84d245c)
 
-## Links: 
+![American Sign Language sentence](../img/asl.gif)
+*Biological data can come in many forms, for example point representation of American Sign Language. Even though the data we're working with seems different, it's still digitization of biology, and we can use numbers to describe it!*
+[By Athena.PEN - Own work, CC BY-SA 4.0](https://commons.wikimedia.org/w/index.php?curid=74865888)
+
+## Background: 
 
 The `mut` keyword: a [mutable](https://doc.rust-lang.org/rust-by-example/scope/borrow/mut.html) variable. 
 

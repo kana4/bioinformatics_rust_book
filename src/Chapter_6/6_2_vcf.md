@@ -74,3 +74,5 @@ Even if we don't know about the file type, we can start to get an idea that the 
 <ul>Quality: What's the quality related to the alteration or in a not-correct not-incorrect answer, how sure are we of the alteration?</ul>
 <ul>Filter: Does the alteration pass a cutoff for quality, or in a not-correct not-incorrect answer, are we more sure or unsure of the alteration?</ul>
 <ul>Info: Other information that we couldn't fit into the other columns</ul>
+
+[Official File Format Specifications](http://samtools.github.io/hts-specs/). Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget
