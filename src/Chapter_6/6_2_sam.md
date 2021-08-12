@@ -1,7 +1,6 @@
-# Sam and Bam File Format
+# Sam File Format
 
-
-What SAM data looks like:
+What SAM data looks like (description at the bottom of this page):
 
 ```
 @SQ	SN:chr1	LN:249250621
@@ -14,7 +13,6 @@ What SAM data looks like:
 @SQ	SN:chr8	LN:146364022
 @SQ	SN:chr9	LN:141213431
 @SQ	SN:chr10	LN:135534747
-(base) l@mbp Downloads % head -400 out.sam
 @SQ	SN:chr1	LN:249250621
 @SQ	SN:chr2	LN:243199373
 @SQ	SN:chr3	LN:198022430
@@ -58,18 +56,6 @@ SOLEXA-1GA-2_2_FC20EMB:5:62:877:892	16	chr1	10237	25	36M	*	0	0	ACCCCAACCCTACACCC
 SOLEXA-1GA-2_2_FC20EMB:5:172:417:550	16	chr1	10242	25	36M	*	0	0	AACCCTAAACCCTAAACCCTAACCCTAACCCTAACB@BA>=EG>B@CANEDBEKBMGRCMGVJTORShKhh	NM:i:0	X0:i:1	MD:Z:36
 ```
 
-BAM data is the same as SAM only compressed and in binary form. When converted, it looks just like SAM data. Raw, it looks like this (using `hexdump`):
-```
-0000000 42 41 4d 01 00 00 00 00 18 00 00 00 05 00 00 00
-0000010 63 68 72 31 00 3d 43 db 0e 05 00 00 00 63 68 72
-0000020 32 00 8d ed 7e 0e 05 00 00 00 63 68 72 33 00 1e
-0000030 95 cd 0b 05 00 00 00 63 68 72 34 00 64 c8 64 0b
-0000040 05 00 00 00 63 68 72 35 00 3c 8c c8 0a 05 00 00
-0000050 00 63 68 72 36 00 3b 02 33 0a 05 00 00 00 63 68
-0000060 72 37 00 67 43 7c 09 05 00 00 00 63 68 72 38 00
-0000070 76 56 b9 08 05 00 00 00 63 68 72 39 00 f7 be 6a
-0000080 08 06 00 00 00 63 68 72 31 30 00 9b 18 14 08 06
-0000090 00 00 00 63 68 72 31 31 00 34 09 0c 08 06 00 00
-```
+The first few lines starting with an `@` symbol are the 'header' of the file. We can see that we have a few chromosomes, and the final header line says what command and tool (`samtools`) we used to create the sam file. Now the data!
 
-
+The data is 

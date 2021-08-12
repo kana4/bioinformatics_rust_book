@@ -1,6 +1,6 @@
 # VCF File Format
 
-First, a quick look at what VCF data looks like:
+First, a quick look at what VCF data looks like (description at the bottom of this page):
 
 ```
 ##fileformat=VCFv4.0

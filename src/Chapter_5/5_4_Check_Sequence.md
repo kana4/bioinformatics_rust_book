@@ -15,7 +15,7 @@ fn main(){
     let vector = b"AAAAA".to_vec();
     
     let first_element = vector[0];
-        
+
     let mut boolean_vector: Vec<bool> = vec![];
 
     // For each element, true or false: is the same as the first element    
@@ -29,5 +29,8 @@ fn main(){
 ```
 
 [playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=1bf1cb00cdfce69f3765253711c55c55)
+
+
+
 
 *Note:* There's always more than one way to do things, can you think of other ways to test whether a sequence is a homopolymer?

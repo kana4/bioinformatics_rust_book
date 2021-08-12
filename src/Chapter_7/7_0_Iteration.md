@@ -34,4 +34,6 @@ Our final English-Rust translations would be:
 "Iterate through the vector and sum the elements, and hey, turbofish, don't forget to give me back a u64 please"
 `vector.iter().sum::<u64>()`. 
 
-Thanks turbofish!
+Thanks [turbofish](https://turbo.fish)!
+
+

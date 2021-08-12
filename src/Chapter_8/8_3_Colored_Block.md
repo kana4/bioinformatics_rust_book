@@ -30,7 +30,6 @@ fn main() {
             };
         }
     }
-
     // write it out to a file
     img.save("mysecondimage.png").unwrap();
 }
