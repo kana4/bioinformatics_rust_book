@@ -163,25 +163,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="counting-bases"><a class="header" href="#counting-bases">Counting Bases</a></h1>
-<pre><code>// println!(&quot;{:?}&quot;, boolean_vector.into_iter().all(|u| u==true));
-</code></pre>
-<p>Now that we know about iteration, let's use it to count the number of bases in a </p>
-<pre><code>use std::cmp::Ordering;
-use std::collections::BTreeMap;
-
-fn main() {
-        let btree: BTreeMap&lt;Ordering, u64&gt; = BTreeMap::new();
-        let test = vec![1,2,3,4];
-        let target = 3;
-        test.iter().for_each(|u| match u.cmp(&amp;target) {
-                    Ordering::Less =&gt; println!(&quot;less&quot;),
-                    Ordering::Equal =&gt; println!(&quot;equal&quot;),
-                    Ordering::Greater =&gt; println!(&quot;greater&quot;),
-                })
-}
-
-</code></pre>
+                        <h1 id="counting"><a class="header" href="#counting">Counting</a></h1>
 
                     </main>
 
