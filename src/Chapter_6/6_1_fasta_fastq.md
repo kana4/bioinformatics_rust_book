@@ -1,2 +1,1 @@
-# FASTA and FASTQ File Format
-
+# FASTA and FASTQ

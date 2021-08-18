@@ -533,150 +533,10 @@ fn main(){
 <h1 id="biological-file-types"><a class="header" href="#biological-file-types">Biological File Types</a></h1>
 <p>Biological data most commonly has a header with a description of the data followed by the data itself. If a variant analysis was done, we might get back a variant call file (<a href="https://en.wikipedia.org/wiki/Variant_Call_Format">VCF</a>), which will annotate variants from a genome reference. Sequencing Alignment Mapping (<a href="https://en.wikipedia.org/wiki/SAM_(file_format)">SAM</a>) files are usually a lot larger and contain all the sequencing data aligned to our genome reference. <a href="https://en.wikipedia.org/wiki/FASTA_format">Fasta</a> files (not really short for anything) are the simplest of all; they only contain sequences and descriptions of the sequences. We'll take a quick look at these file types so we know what we could be working with.</p>
 <p><a href="http://samtools.github.io/hts-specs/">Official File Format Specifications</a>. Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget. We'll go over these, so don't worry about it yet!</p>
-<h1 id="fasta-and-fastq-file-format"><a class="header" href="#fasta-and-fastq-file-format">FASTA and FASTQ File Format</a></h1>
-<h1 id="vcf-file-format"><a class="header" href="#vcf-file-format">VCF File Format</a></h1>
-<p>First, a quick look at what VCF data looks like (description at the bottom of this page):</p>
-<pre><code>##fileformat=VCFv4.0
-##fileDate=20100610 
-##source=glfTools v3
-##reference=1000GenomesPilot-NCBI36 
-##phasing=NA
-##INFO=&lt;ID=NS,Number=1,Type=Integer,Description=&quot;Number of Samples With Mapped Reads&quot;&gt;
-##INFO=&lt;ID=DP,Number=1,Type=Integer,Description=&quot;Total Depth&quot;&gt;
-##INFO=&lt;ID=DB,Number=0,Type=Flag,Description=&quot;dbSNP membership, build 129&quot;&gt;
-##INFO=&lt;ID=H2,Number=0,Type=Flag,Description=&quot;HapMap2 membership&quot;&gt;
-##FILTER=&lt;ID=NUYR,Description=&quot;Variant in non-unique Y region&quot;&gt;
-(base) l@mbp Downloads % head -100 test.vcf
-##fileformat=VCFv4.0
-##fileDate=20100610 
-##source=glfTools v3
-##reference=1000GenomesPilot-NCBI36 
-##phasing=NA
-##INFO=&lt;ID=NS,Number=1,Type=Integer,Description=&quot;Number of Samples With Mapped Reads&quot;&gt;
-##INFO=&lt;ID=DP,Number=1,Type=Integer,Description=&quot;Total Depth&quot;&gt;
-##INFO=&lt;ID=DB,Number=0,Type=Flag,Description=&quot;dbSNP membership, build 129&quot;&gt;
-##INFO=&lt;ID=H2,Number=0,Type=Flag,Description=&quot;HapMap2 membership&quot;&gt;
-##FILTER=&lt;ID=NUYR,Description=&quot;Variant in non-unique Y region&quot;&gt;
-##FORMAT=&lt;ID=GT,Number=1,Type=String,Description=&quot;Genotype&quot;&gt;
-##FORMAT=&lt;ID=GQ,Number=1,Type=Integer,Description=&quot;Genotype	Quality&quot;&gt;
-##FORMAT=&lt;ID=DP,Number=1,Type=Integer,Description=&quot;Depth&quot;&gt;
-##INFO=&lt;ID=AC,Number=.,Type=Integer,Description=&quot;Allele count in genotypes&quot;&gt;
-##INFO=&lt;ID=AN,Number=1,Type=Integer,Description=&quot;Total number of alleles in called genotypes&quot;&gt;
-#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
-Y	2728456	rs2058276	T	C	32	.	AC=2;AN=2;DB;DP=182;H2;NS=65
-Y	2734240	.	G	A	31	.	AC=1;AN=2;DP=196;NS=63
-Y	2743242	.	C	T	25	.	AC=1;AN=2;DP=275;NS=66
-Y	2746727	.	A	G	34	.	AC=2;AN=2;DP=179;NS=64
-Y	2777970	.	T	A	67	.	AC=1;AN=2;DP=225;NS=67
-Y	2782506	rs2075640	A	G	38	.	AC=1;AN=2;DB;DP=254;H2;NS=66
-Y	2783755	.	G	A	51	.	AC=1;AN=2;DP=217;NS=67
-Y	2788927	rs56004558	A	G	38	.	AC=1;AN=2;DB;DP=173;NS=60
-Y	2813908	.	T	G	46	.	AC=1;AN=2;DP=188;NS=67
-Y	2815679	.	T	C	30	.	AC=1;AN=2;DP=205;NS=64
-Y	2816471	rs9785784	T	A	40	.	AC=1;AN=2;DB;DP=212;NS=64
-Y	2841844	.	T	G	41	.	AC=1;AN=2;DP=176;NS=56
-Y	2891375	.	T	C	29	.	AC=1;AN=2;DP=176;NS=61
-Y	2899051	.	C	T	51	.	AC=1;AN=2;DP=206;NS=68
-Y	2900301	.	G	A	54	.	AC=1;AN=2;DP=167;NS=65
-Y	2923665	rs7892924	G	A	34	.	AC=1;AN=2;DB;DP=171;NS=63
-Y	2944029	.	T	C	35	.	AC=1;AN=2;DP=244;NS=61
-Y	2947824	rs9786184	A	C	39	.	AC=2;AN=2;DB;DP=206;NS=63
-Y	2962839	rs9786562	C	T	33	.	AC=2;AN=2;DB;DP=185;NS=63
-Y	2972385	rs9786491	C	T	29	.	AC=1;AN=2;DB;DP=160;NS=55
-Y	3034782	.	A	C	40	.	AC=1;AN=2;DP=163;NS=64
-Y	3094725	.	C	G	18	.	AC=1;AN=2;DP=179;NS=63
-Y	3134753	.	A	T	42	.	AC=1;AN=2;DP=189;NS=65
-Y	3144401	.	G	A	46	.	AC=1;AN=2;DP=169;NS=59
-Y	3168773	.	C	T	43	.	AC=1;AN=2;DP=173;NS=64
-Y	3537173	rs7067327	G	C	31	.	AC=2;AN=2;DB;DP=193;NS=64
-Y	3751769	.	A	G	26	.	AC=1;AN=2;DP=173;NS=61
-Y	3781790	.	T	A	55	.	AC=1;AN=2;DP=165;NS=59
-Y	4176203	.	G	A	18	.	AC=1;AN=2;DP=166;NS=69
-Y	4177733	.	A	G	40	.	AC=1;AN=2;DP=177;NS=61
-Y	4305332	.	T	C	46	.	AC=1;AN=2;DP=174;NS=69
-
-</code></pre>
-<p>Even if we don't know about the file type, we can start to get an idea that the file has a header followed by a table-looking structure of the actual data. In VCF, each line in a header is denoted by <code>##</code>, whereas the column names are denoted by a single <code>#</code>. To summarize each column in the data:</p>
-<ul>Chromosome: Which chromosome is the alteration on?</ul>
-<ul>Position: What position on the chromosome is the alteration on?</ul>
-<ul>ID: If this is a well known alteration, what's the ID?</ul>
-<ul>Ref: What's the base in the genome reference?</ul>
-<ul>Alt: What's the base altered to?</ul>
-<ul>Quality: What's the quality related to the alteration or in a not-correct not-incorrect answer, how sure are we of the alteration?</ul>
-<ul>Filter: Does the alteration pass a cutoff for quality, or in a not-correct not-incorrect answer, are we more sure or unsure of the alteration?</ul>
-<ul>Info: Other information that we couldn't fit into the other columns</ul>
-<p><a href="http://samtools.github.io/hts-specs/">Official File Format Specifications</a>. Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget</p>
-<h1 id="sam-file-format"><a class="header" href="#sam-file-format">Sam File Format</a></h1>
-<p>What SAM data looks like (description at the bottom of this page):</p>
-<pre><code>@SQ	SN:chr1	LN:249250621
-@SQ	SN:chr2	LN:243199373
-@SQ	SN:chr3	LN:198022430
-@SQ	SN:chr4	LN:191154276
-@SQ	SN:chr5	LN:180915260
-@SQ	SN:chr6	LN:171115067
-@SQ	SN:chr7	LN:159138663
-@SQ	SN:chr8	LN:146364022
-@SQ	SN:chr9	LN:141213431
-@SQ	SN:chr10	LN:135534747
-@SQ	SN:chr1	LN:249250621
-@SQ	SN:chr2	LN:243199373
-@SQ	SN:chr3	LN:198022430
-@SQ	SN:chr4	LN:191154276
-@SQ	SN:chr5	LN:180915260
-@SQ	SN:chr6	LN:171115067
-@SQ	SN:chr7	LN:159138663
-@SQ	SN:chr8	LN:146364022
-@SQ	SN:chr9	LN:141213431
-@SQ	SN:chr10	LN:135534747
-@SQ	SN:chr11	LN:135006516
-@SQ	SN:chr12	LN:133851895
-@SQ	SN:chr13	LN:115169878
-@SQ	SN:chr14	LN:107349540
-@SQ	SN:chr15	LN:102531392
-@SQ	SN:chr16	LN:90354753
-@SQ	SN:chr17	LN:81195210
-@SQ	SN:chr18	LN:78077248
-@SQ	SN:chr19	LN:59128983
-@SQ	SN:chr20	LN:63025520
-@SQ	SN:chr21	LN:48129895
-@SQ	SN:chr22	LN:51304566
-@SQ	SN:chrM	LN:16571
-@SQ	SN:chrX	LN:155270560
-@PG	ID:samtools	PN:samtools	VN:1.11	CL:samtools view -h -o out.sam wgEncodeUwRepliSeqBg02esG1bAlnRep1.bam
-SOLEXA-1GA-2_2_FC20EMB:5:251:979:328	0	chr1	10145	25	36M	*	0	0	AACCCCTAACCCTAACCCTAACCCTAACCCTAAAChhhhHcWhhHTghcKA_ONhAAEEBZE?H?CBC?DA	NM:i:1	X1:i:1	MD:Z:33A2
-SOLEXA-1GA-2_2_FC20EMB:5:102:214:278	0	chr1	10148	25	36M	*	0	0	CCCTAACCCTAACCCTAACCCTAACCCTAACCTAAhbfhhhXUYhT_ULZdLRTKNIMIKGLJCHFFJQJN	NM:i:0	X0:i:1	MD:Z:36
-SOLEXA-1GA-2_2_FC20EMB:5:195:284:685	16	chr1	10149	25	36M	*	0	0	CCAAACACTAACCCTAACCCTAACCCTAACCTAAC&gt;&lt;&gt;B@&gt;?&gt;?D&gt;&gt;?B?D&gt;DBC?E@BDHAKCEKERLOO	NM:i:1	X1:i:1	MD:Z:29A3A2
-SOLEXA-1GA-2_2_FC20EMB:5:35:583:827	0	chr1	10150	25	36M	*	0	0	CTAACCCTAAACCTAACCCTAACCCTAACCTAACChhW_X]MXNOHQQWMILHGIFMJGJLCFGGJAKIEH	NM:i:1	X1:i:1	MD:Z:10A24A0
-SOLEXA-1GA-2_2_FC20EMB:5:248:130:724	0	chr1	10152	25	36M	*	0	0	AACCCTAACCCTAACCCCAACCCTAACCTAACCCThchPhc___cWS[VRObRXDTOUSJLXOA@LGFMC@	NM:i:1	X1:i:1	MD:Z:17C18
-SOLEXA-1GA-2_2_FC20EMB:5:236:644:107	16	chr1	10154	25	36M	*	0	0	CCCTAACCCTAACCCTAACCCTAACCTAACCCTAAICF=A@BHGEGGDFLIKKYYGD^CahMaShfhNhhh	NM:i:0	X0:i:1	MD:Z:36
-SOLEXA-1GA-2_2_FC20EMB:5:165:628:70	16	chr1	10155	25	36M	*	0	0	CCTAACCCTAACCCTAACCTTTACATAACCCTAAC&gt;D?BAEAA?E=JGGBK&gt;FKDGFJPVHSFTT\QQMch	NM:i:1	X1:i:1	MD:Z:11A2T1T19
-SOLEXA-1GA-2_2_FC20EMB:5:108:485:455	16	chr1	10156	25	36M	*	0	0	CTAACCCTAACCCTAACCCTAACATAACCCTAACCCFVIUIIIbGPROGhRhhhIhhhhhhhhhhhhfhhh	NM:i:1	X1:i:1	MD:Z:12A23
-SOLEXA-1GA-2_2_FC20EMB:5:240:501:237	0	chr1	10158	25	36M	*	0	0	AACCCTAACCCTAACCCTAACCTAACCCTAACCAThhhchg_ORNbX]RMZLREQMNTNFLDPMDDDEDKL	NM:i:1	X1:i:1	MD:Z:33A2
-SOLEXA-1GA-2_2_FC20EMB:5:258:882:389	16	chr1	10215	25	36M	*	0	0	CTAACCCTAAACCTAACCCCTAACCCTAACCCTAAIMZO&gt;?EGDRRhhdXKVNRZKhhhhhhhNhhhhhhh	NM:i:1	X1:i:1	MD:Z:25A10
-SOLEXA-1GA-2_2_FC20EMB:5:197:509:870	16	chr1	10216	25	36M	*	0	0	TAAACCGAACCCGAACCCCTAACCCTAACCCTAAA&lt;IJELC@SCUMY?R?D\UPW^@d]hWXN\hhhhhLh	NM:i:1	X1:i:1	MD:Z:23G5G2A3
-SOLEXA-1GA-2_2_FC20EMB:5:160:880:612	0	chr1	10217	25	36M	*	0	0	AACCCTAACCCTAACTCCTAACCCTAACCCTAAAChhhNh\O[WUNYQKOWNSIIDNFOPHJHIAI@GDJG	NM:i:1	X1:i:1	MD:Z:15T19A0
-SOLEXA-1GA-2_2_FC20EMB:5:249:922:808	16	chr1	10217	25	36M	*	0	0	AACACTAACCCCAACCCCTAACCCTAACCCTAAAChKWQRBhhB``Ah`hhhhhhhhhhhhhhhhhhhhhh	NM:i:1	X1:i:1	MD:Z:0A23C7A3
-SOLEXA-1GA-2_2_FC20EMB:5:13:922:731	0	chr1	10236	25	36M	*	0	0	GACCCAAACCCTAAACCCTAAACCCTAAACCTAAChMhWZaPTSZHfUMMSOJTJEKLKELKKDJ&gt;JPCEI	NM:i:1	X1:i:1	MD:Z:0G4A22A7
-SOLEXA-1GA-2_2_FC20EMB:5:62:877:892	16	chr1	10237	25	36M	*	0	0	ACCCCAACCCTACACCCTACACCCTAACCCTAACCCHLKEQGOUcCQ`GYdhF[hXhhhWhhhhhWhhhhh	NM:i:1	X1:i:1	MD:Z:16C6C7C4
-SOLEXA-1GA-2_2_FC20EMB:5:172:417:550	16	chr1	10242	25	36M	*	0	0	AACCCTAAACCCTAAACCCTAACCCTAACCCTAACB@BA&gt;=EG&gt;B@CANEDBEKBMGRCMGVJTORShKhh	NM:i:0	X0:i:1	MD:Z:36
-</code></pre>
-<p>The first few lines starting with an <code>@</code> symbol are the 'header' of the file. We can see that we have a few chromosomes, and the final header line says what command and tool (<code>samtools</code>) we used to create the sam file. Now the data!</p>
-<p>In this file, </p>
-<p><a href="http://samtools.github.io/hts-specs/">Official File Format Specifications</a>. Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget</p>
-<h1 id="bam-file-format"><a class="header" href="#bam-file-format">Bam File Format</a></h1>
-<p>BAM data is the same as SAM only compressed and in binary form. When converted, it looks just like SAM data. Raw, it looks like this (using <code>hexdump file.bam</code>):</p>
-<pre><code>0000000 42 41 4d 01 00 00 00 00 18 00 00 00 05 00 00 00
-0000010 63 68 72 31 00 3d 43 db 0e 05 00 00 00 63 68 72
-0000020 32 00 8d ed 7e 0e 05 00 00 00 63 68 72 33 00 1e
-0000030 95 cd 0b 05 00 00 00 63 68 72 34 00 64 c8 64 0b
-0000040 05 00 00 00 63 68 72 35 00 3c 8c c8 0a 05 00 00
-0000050 00 63 68 72 36 00 3b 02 33 0a 05 00 00 00 63 68
-0000060 72 37 00 67 43 7c 09 05 00 00 00 63 68 72 38 00
-0000070 76 56 b9 08 05 00 00 00 63 68 72 39 00 f7 be 6a
-0000080 08 06 00 00 00 63 68 72 31 30 00 9b 18 14 08 06
-0000090 00 00 00 63 68 72 31 31 00 34 09 0c 08 06 00 00
-</code></pre>
-<p><a href="http://samtools.github.io/hts-specs/">Official File Format Specifications</a>. Includes VCF, SAM, CRAM, BAM, BCF, CSI, Tabix, crypt4gh, htsget, and Refget</p>
+<h1 id="fasta-and-fastq"><a class="header" href="#fasta-and-fastq">FASTA and FASTQ</a></h1>
+<h1 id="vcf"><a class="header" href="#vcf">VCF</a></h1>
+<h1 id="sam"><a class="header" href="#sam">SAM</a></h1>
+<h1 id="bam"><a class="header" href="#bam">BAM</a></h1>
 <h1 id="iteration"><a class="header" href="#iteration">Iteration</a></h1>
 <p>While there are loops (no pun intended) in all languages, Rust has many other powerful methods that make our life so much easier, but may also be a little confusing at first.</p>
 <p>Instead of writing a <code>for</code> loop every time we want to do something per element, we can use a dot notation version, or an <code>iterator</code>. </p>
@@ -866,8 +726,7 @@ fn main(){
 </code></pre>
 <p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=74327ba36eba7ac9f7bc45be23968379">playground</a></p>
 <h1 id="short-circuit-logic"><a class="header" href="#short-circuit-logic">Short Circuit Logic</a></h1>
-<p>A function is called short circuiting 
-Using our si</p>
+<p>A function is called short circuiting </p>
 <h1 id="split-view-custom-mac-terminal"><a class="header" href="#split-view-custom-mac-terminal">Split-View Custom Mac Terminal</a></h1>
 <p>Prior to this, I used to have a ton of terminals open all the time and it started to be a hassle. Multiplying the usefulness of our terminal window is as easy as typing a few commands!</p>
 <p>You'll need <a href="https://brew.sh">homebrew</a> if you don't have it already. Simply copy/paste <code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code> into a terminal will do the trick. After complete, use homebrew to install the program tmux by typing <code>brew install tmux</code> into the terminal. Start tmux in the terminal by typing <code>tmux</code> in the terminal. We've started a new tmux session.</p>
