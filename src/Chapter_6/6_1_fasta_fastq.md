@@ -1,1 +1,0 @@
-# FASTA and FASTQ

@@ -2,4 +2,4 @@
 
 [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) (CI) is fancy terminology for automatically testing stuff when we publish code. If we could, we would run our code on a factory-fresh computer and document everything we did to have our code running. In continuous integration, we make a computer make a virtual computer doing exactly this. The virtual computer will be factory-fresh, and our continuous integration instructions will tell it to install prerequisites, move files, anything we need to have our code running. We then test to see if our code runs, and if it doesn't the code doesn't pass CI tests.
 
-This is usually related to Git and version control, which can get pretty complicated and deserves it's own [book](https://git-scm.com/book/en/).
+This is usually related to Git and version control, which can get pretty complicated and has it's own [book](https://git-scm.com/book/en/).
