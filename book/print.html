@@ -734,6 +734,7 @@ SOLEXA-1GA-2_2_FC20EMB:5:172:417:550	16	chr1	10242	25	36M	*	0	0	AACCCTAAACCCTAAA
 <p>As we learned in section 5.3, <a href="Chapter_7/../Chapter_5_5_3_Integer_Overflow.html">integer overflow</a> occurs if our sum is over 255, so our final bit of code is to the left of the equal sign (<a href="https://en.wikipedia.org/wiki/Sides_of_an_equation">left hand side</a>, or lhs), indicating to return our <code>sum</code> as a <code>u64</code>, which has a lot larger max limit. This is translated as <code>let sum: u64</code> or specifically, let <code>sum</code> be a <code>u64</code> and not any other integer type.</p>
 <p>Translation done!</p>
 <h1 id="turbofish"><a class="header" href="#turbofish">Turbofish</a></h1>
+<p>Let's edit our code with an important trick, can you find it?</p>
 <pre><code>fn main(){
     let vector = vec![1,2,3,4];
 
@@ -743,7 +744,7 @@ SOLEXA-1GA-2_2_FC20EMB:5:172:417:550	16	chr1	10242	25	36M	*	0	0	AACCCTAAACCCTAAA
 }
 </code></pre>
 <p><a href="https://play.rust-lang.org/?version=stable&amp;mode=debug&amp;edition=2018&amp;gist=bcc6dac13b035b705ca17ee8fdd9fe2e">playground</a></p>
-<p>The last part of our code is one of the coolest parts of Rust: the <a href="https://turbo.fish">Turbofish</a> (yes, that's it's actual name). Remember that if we just summed directly, if the sum was bigger than 256, we would get an <code>integer overflow</code> (<a href="Chapter_7/../Chapter_5/5_3_Integer_Overflow.html">section 5_3</a>). We fixed this by making <code>sum</code> able to hold bigger numbers (an unsigned 64-bit integer vs 8-bit) With turbofish, we can say &quot;Give me back an unsigned 64-bit integer at the end&quot; with <code>::&lt;u64&gt;</code>. Turbofish goes between the name of the function and the parenthesis, so <code>sum()</code> would be <code>sum::&lt;&gt;()</code>.</p>
+<p>The last part of our code is a pretty cool part of Rust: the <a href="https://turbo.fish">Turbofish</a> (that's it's actual name). Remember that if we just summed directly, if the sum was bigger than 255, we would get an <code>integer overflow</code> (<a href="Chapter_7/../Chapter_5/5_3_Integer_Overflow.html">section 5_3</a>). We fixed this by making <code>sum</code> able to hold bigger numbers (an unsigned 64-bit integer vs 8-bit) With turbofish, we can say &quot;Give me back an unsigned 64-bit integer at the end&quot; with <code>::&lt;u64&gt;</code>. Turbofish goes between the name of the function and the parenthesis, so <code>sum()</code> would be <code>sum::&lt;&gt;()</code>.</p>
 <p>Our final English-Rust translations would be:
 &quot;Iterate through the vector and sum the elements, and hey, turbofish, don't forget to give me back a u64 please&quot;
 <code>vector.iter().sum::&lt;u64&gt;()</code>. </p>
