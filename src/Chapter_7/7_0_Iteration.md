@@ -1,6 +1,6 @@
 # Iteration
 
-While there are loops (no pun intended) in all languages, Rust has many other powerful methods that make our life so much easier, but may also be a little confusing at first.
+While there are loops (no pun intended) in all languages, Rust has many other powerful methods that make our life so much easier.
 
 Instead of writing a `for` loop every time we want to do something per element, we can use a dot notation version, or an `iterator`. 
 
@@ -33,3 +33,7 @@ As we learned in section 5.3, [integer overflow](../Chapter_5_5_3_Integer_Overfl
 
 Translation done!
 
+![sushi](../img/sushi.jpg) 
+*mmmm sushi.*
+
+Conveyor belt sushi is like sushi with iteration; we iterate through the sushi as the sushi comes to us and do something with the sushi. Of course, we want to eat the sushi! In other words: `sushi.iter().eat_sushi()`. Without iteration, we'd only be able to eat one sushi plate... Eat all the sushi!
