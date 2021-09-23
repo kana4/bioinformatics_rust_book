@@ -4,3 +4,5 @@ Working with numbers and letters is fun, but it would be really cool to make vis
 
 In this chapter we're going to make images from our biological sequences!
 
+*TODO*
+insert jpg?
